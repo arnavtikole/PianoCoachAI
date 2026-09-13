@@ -166,10 +166,4 @@ Then open the local URL that Streamlit gives you.
     ├── requirements.txt
     └── README.md
 
-## Demo
-
-A live version of PianoCoach AI will be available here:
-
-**[Try PianoCoach AI](YOUR_APP_URL)**
-
 🎹 **Thanks for checking out PianoCoach AI!**
