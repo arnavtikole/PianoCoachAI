@@ -45,4 +45,3 @@ def convert_pdf_to_musicxml(pdf_path):
         raise FileNotFoundError("Audiveris did not create a MusicXML file.")
 
     return musicxml
-
