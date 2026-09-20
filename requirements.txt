@@ -2,6 +2,7 @@ openai==2.51.0
 streamlit==1.59.2
 streamlit-pdf==2.0.1
 librosa==0.11.0
+setuptools<82
 basic-pitch==0.4.0
 numpy==1.26.4
 pandas==3.0.3
