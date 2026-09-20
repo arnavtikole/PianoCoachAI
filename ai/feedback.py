@@ -1,4 +1,4 @@
-
+import os
 from openai import OpenAI
 import streamlit as st
 from comparison.compare_notes import CORRECT
@@ -7,7 +7,8 @@ from .prompts import AI_PROMPT
 from comparison.measure_summary import build_measure_summary, score_staff_label
 
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=api_key)
 
 
 def generate_feedback(report, language="English"):
