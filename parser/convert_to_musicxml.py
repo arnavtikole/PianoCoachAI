@@ -1,7 +1,11 @@
 from pathlib import Path
 import subprocess
+import os
 
-AUDIVERIS_PATH = Path(r"C:\Program Files\Audiveris\Audiveris.exe")
+if os.name == "nt":
+    AUDIVERIS_PATH = Path(r"C:\Program Files\Audiveris\Audiveris.exe")
+else:
+    AUDIVERIS_PATH = Path("/opt/audiveris/bin/Audiveris")
 
 def convert_pdf_to_musicxml(pdf_path):
     pdf_path = Path(pdf_path)
